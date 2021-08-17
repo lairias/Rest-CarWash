@@ -1,0 +1,43 @@
+{
+  "name": "REST-API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js ",
+    "babel-node": "babel-node src/index.js",
+    "build": "babel src/ --out-dir dist",
+    "serve": "node dist/index.js",
+    "web": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "multer": "^1.4.2",
+    "mypower": "^0.9.2",
+    "mysql": "^2.18.1",
+    "mysql-backup": "^1.0.0",
+    "mysqldump": "^3.2.0",
+    "mysqldump-with-drop": "^1.2.0",
+    "random-codes": "0.0.10",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.1.0",
+    "dotenv": "^8.6.0",
+    "morgan": "^1.10.0",
+    "mysql-import": "^5.0.21",
+    "nodemon": "^2.0.6"
+  }
+}
